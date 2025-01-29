@@ -1,6 +1,6 @@
 package chap03;
 
-// Figura 3.2: AccountTest.java
+// AccountTest.java
 // Cria e manipula um objeto Account.
 import java.util.Scanner;
 
@@ -9,18 +9,13 @@ public class AccountTest {
         // Cria um objeto Scanner para obter entrada a partir da janela de comando
         Scanner input = new Scanner(System.in);
 
-        // Cria um objeto Account e o atribui a myAccount
-        Account myAccount = new Account();
+        // Cria dois objetos Account
+        Account account1 = new Account("Jane Green");
+        Account account2 = new Account("John Blue");
 
-        // exibe o valor inicial do nome (null)
-        System.out.printf("Initial name is: %s%n%n", myAccount.getName());
+        // exibe o valor inicial de nome para cada Account
+        System.out.printf("account1 name is: %s%n", account1.getName());
+        System.out.printf("account2 name is: %s%n", account2.getName());
 
-        // solicita e lê o nome
-        System.out.println("Please enter the name:");
-        String theName = input.nextLine();  // lê uma linha de texto
-        myAccount.setName(theName); // gera saída de uma linha em branco
-
-        // Exibe o nome armazenado no objeto myAccount
-        System.out.printf("Name in object myAccount is: %n%s%n", myAccount.getName());
     }
 }
