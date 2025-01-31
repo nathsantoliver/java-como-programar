@@ -2,7 +2,7 @@ package chap05.autoPolicy;
 
 public class AutoPolicy {
     private int accountNumber;  // número da conta da apólice
-    private String makeAndModel;    // carro ao qual a apólilce é aplicada
+    private String makeAndModel;    // carro ao qual a apólice é aplicada
     private String state;   // abreviatura do estado com duas letras
 
     // construtor
