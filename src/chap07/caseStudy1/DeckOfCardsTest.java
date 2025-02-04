@@ -1,4 +1,4 @@
-package chap07.caseStudy;
+package chap07.caseStudy1;
 
 public class DeckOfCardsTest {
     // executa o aplicativo

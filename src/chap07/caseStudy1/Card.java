@@ -1,4 +1,4 @@
-package chap07.caseStudy;
+package chap07.caseStudy1;
 
 public class Card {
     private final String face;  // face da carta ("Ace", "Deuce", ...)
