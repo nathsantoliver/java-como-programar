@@ -1,4 +1,4 @@
-package chap07;
+package chap07.arrays;
 
 public class SumArray {
     public static void main(String[] args) {
