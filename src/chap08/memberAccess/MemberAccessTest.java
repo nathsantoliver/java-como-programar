@@ -1,4 +1,6 @@
-package chap08;
+package chap08.memberAccess;
+
+import chap08.timeClass.Time1;
 
 public class MemberAccessTest {
     public static void main(String[] args) {

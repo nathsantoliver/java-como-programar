@@ -1,4 +1,4 @@
-package chap08;
+package chap08.timeClass;
 
 public class Time1 {
     private int hour;   // 0 - 23

@@ -1,4 +1,4 @@
-package chap08;
+package chap08.caseStudy1;
 
 public class Time2 {
     private int hour;   // 0 - 23

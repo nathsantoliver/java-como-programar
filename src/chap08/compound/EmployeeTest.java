@@ -1,4 +1,4 @@
-package chap08;
+package chap08.compound;
 
 public class EmployeeTest {
     public static void main(String[] args) {

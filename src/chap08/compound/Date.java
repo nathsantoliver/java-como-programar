@@ -1,4 +1,4 @@
-package chap08;
+package chap08.compound;
 
 public class Date {
     private int month;  // 1-12

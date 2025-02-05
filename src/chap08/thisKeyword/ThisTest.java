@@ -1,4 +1,4 @@
-package chap08;
+package chap08.thisKeyword;
 
 public class ThisTest {
     public static void main(String[] args) {
