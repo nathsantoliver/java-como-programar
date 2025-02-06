@@ -1,13 +1,11 @@
 package chap09;
 
-public class BaseplusCommissionEmployee2 extends CommissionEmployee {
-    private double baseSalary;
+public class BaseplusCommissionEmployee2 extends CommissionEmployee2 {
+    private double baseSalary; // salário-base por semana
 
-    // construtor de seis argumentos
-    public BasePlusCommissionEmployee2(String firstName, String lastName,
-                                      String socialSecurityNumber, double grossSales,
-                                      double commissionRate, double baseSalary) {
-        // chamada explícita para o construtor CommissionEmployee da superclasse
+    public BaseplusCommissionEmployee2(String firstName, String lastName,
+                                       String socialSecurityNumber, double grossSales,
+                                       double commissionRate, double baseSalary) {
         super(firstName, lastName, socialSecurityNumber, grossSales, commissionRate);
 
         // se baseSalary é inválido, lança uma exceção
