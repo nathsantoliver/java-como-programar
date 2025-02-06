@@ -1,6 +1,6 @@
 package chap09;
 
-public class CommissionEmployee extends Object {
+public class CommissionEmployee {
     private final String firstName;
     private final String lastName;
     private final String socialSecurityNumber;
