@@ -1,6 +1,6 @@
 package chap09;
 
-public class BaseplusCommissionEmployee2 extends CommissionEmployee2 {
+public class BaseplusCommissionEmployee2 extends CommissionEmployee {
     private double baseSalary; // salário-base por semana
 
     public BaseplusCommissionEmployee2(String firstName, String lastName,
@@ -33,19 +33,14 @@ public class BaseplusCommissionEmployee2 extends CommissionEmployee2 {
     // calcula os lucros
     @Override
     public double earnings() {
-        // não permitido: commissionRate e grossSales privado em superclasse
-        return baseSalary + (commissionRate * grossSales);
+        return getBaseSalary() + super.earnings();
     }
 
     // retorna a representação de String de BasePlusCommissionEmployee
     @Override   // indica que esse metodo substitui um metodo da superclasse
     public String toString() {
         // não permitido: tenta acessar membros private da superclasse
-        return String.format("%s: %s %s%n%s: %s%n%s: %.2f%n%s: %.2f%n%s: %.2f",
-                "commission employee", firstName, lastName,
-                "social security number", socialSecurityNumber,
-                "gross sales", grossSales,
-                "commission rate", commissionRate,
-                "base salary", baseSalary);
+        return String.format("%s %s%n%s: %.2f", "base salaried",
+                super.toString(), "base salary", getBaseSalary());
     }
 }
