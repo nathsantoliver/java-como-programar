@@ -18,7 +18,7 @@ public class ButtonFrame extends JFrame {
         add(plainJButton);
 
         Icon bug1 = new ImageIcon(getClass().getResource("logo3.png"));
-        Icon bug2 = new ImageIcon(getClass().getResource("logo4.png"));
+        Icon bug2 = new ImageIcon(getClass().getResource("penguim.png"));
         fancyJButton = new JButton("Fancy Button", bug1);   // configura imagem
         fancyJButton.setRolloverIcon(bug2); // configura imagem de rollover
         add(fancyJButton);  // adiciona fancyJButton ao JFrame
