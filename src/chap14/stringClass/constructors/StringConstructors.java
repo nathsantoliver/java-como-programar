@@ -1,4 +1,4 @@
-package chap14.constructors;
+package chap14.stringClass.constructors;
 
 public class StringConstructors {
     public static void main(String[] args) {
