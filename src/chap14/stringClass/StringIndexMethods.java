@@ -1,4 +1,4 @@
-package chap14.stringClass.methods;
+package chap14.stringClass;
 
 public class StringIndexMethods {
     public static void main(String[] args) {
