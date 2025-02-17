@@ -6,6 +6,8 @@ logo5.png
 penguim2.png
 penguim3.png
 
+clients.txt
+
 ### IntelliJ IDEA ###
 out/
 !**/src/main/**/out/
