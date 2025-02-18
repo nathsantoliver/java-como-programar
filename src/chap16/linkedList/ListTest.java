@@ -58,7 +58,7 @@ public class ListTest {
         }
     }
 
-    // obtém sublista e utiliza método clear para excluir itens da sublista
+    // obtém sublista e utiliza metodo clear para excluir itens da sublista
     private static void removeItems(List<String> list, int start, int end) {
         list.subList(start, end).clear();   // remove os itens
     }
