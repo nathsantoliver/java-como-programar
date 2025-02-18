@@ -1,4 +1,4 @@
-package chap16.reverseFillCopyMinMax;
+package chap16.list.listMethods.reverseFillCopyMinMax;
 
 import java.util.Arrays;
 import java.util.Collections;

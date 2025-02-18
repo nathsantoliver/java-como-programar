@@ -1,4 +1,4 @@
-package chap16.sort;
+package chap16.list.listMethods.sort;
 
 import chap08.caseStudy1.Time2;
 

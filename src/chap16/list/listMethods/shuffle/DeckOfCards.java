@@ -1,4 +1,4 @@
-package chap16.shuffle;
+package chap16.list.listMethods.shuffle;
 
 import java.util.Arrays;
 import java.util.Collections;

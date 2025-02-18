@@ -1,4 +1,4 @@
-package chap16.binarySearch;
+package chap16.list.listMethods.binarySearch;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -1,4 +1,4 @@
-package chap16.sort;
+package chap16.list.listMethods.sort;
 
 import java.util.Arrays;
 import java.util.Collections;

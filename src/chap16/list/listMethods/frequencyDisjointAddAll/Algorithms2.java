@@ -1,4 +1,4 @@
-package chap16.frequencyDisjointAddAll;
+package chap16.list.listMethods.frequencyDisjointAddAll;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -1,4 +1,4 @@
-package chap16.shuffle;
+package chap16.list.listMethods.shuffle;
 
 // Classe para representar uma Card de um baralho
 public class Card {
