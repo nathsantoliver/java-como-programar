@@ -7,7 +7,7 @@ import java.util.List;
 
 public class Algorithms2 {
     public static void main(String[] args) {
-        String[] colors = {"red", "white", "yellow", "bue"};
+        String[] colors = {"red", "white", "yellow", "blue"};
         List<String> list1 = new ArrayList<>(Arrays.asList(colors));
         ArrayList<String> list2 = new ArrayList<>();
 
