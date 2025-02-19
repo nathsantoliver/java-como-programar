@@ -1,4 +1,4 @@
-package chap17.intStream;
+package chap17;
 
 import java.util.stream.IntStream;
 
