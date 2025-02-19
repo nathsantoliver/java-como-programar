@@ -64,5 +64,19 @@ public class ProcessingEmployees {
                 .sorted(lastThenFirst.reversed())
                 .forEach(System.out::println);
 
+        // exibe os sobrenomes únicos dos funcionários classificados
+        System.out.printf("%nUnique employee last names:%n");
+        list.stream()
+                .map(Employee::getLastName)
+                .distinct()
+                .sorted()
+                .forEach(System.out::println);
+
+        // exibe apenas o nome e o sobrenome
+        System.out.printf("%nEmployees names in order by last name then first name:%n");
+        list.stream()
+                .sorted(lastThenFirst)
+                .map(Employee::getName)
+                .forEach(System.out::println);
     }
 }
