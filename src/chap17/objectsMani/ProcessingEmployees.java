@@ -3,6 +3,7 @@ package chap17.objectsMani;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
+import java.util.function.Function;
 import java.util.function.Predicate;
 
 public class ProcessingEmployees {
@@ -43,6 +44,25 @@ public class ProcessingEmployees {
                         .filter(fourToSixThousand)
                         .findFirst()
                         .get());
+
+        // Functions para obter o nome e o sobrenome de umEmployee
+        Function<Employee, String> byFirstName = Employee::getFirstName;
+        Function<Employee, String> byLastName = Employee::getLastName;
+
+        // Comparator para comparar Employees pelo nome, então, pelo sobrenome
+        Comparator<Employee> lastThenFirst = Comparator.comparing(byLastName).thenComparing(byFirstName);
+
+        // classifica funcionários pelo sobrenome e, então, pelo nome
+        System.out.printf("%nEmployees in ascending order by last name then first:%n");
+        list.stream()
+                .sorted(lastThenFirst)
+                .forEach(System.out::println);
+
+        // classifica funcionários em ordem decrescente pelo sobrenome e, então, pelo nome
+        System.out.printf("%nEmployees in descending order by last name then first:%n");
+        list.stream()
+                .sorted(lastThenFirst.reversed())
+                .forEach(System.out::println);
 
     }
 }
