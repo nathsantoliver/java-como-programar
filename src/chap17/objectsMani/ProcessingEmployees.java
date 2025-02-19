@@ -93,5 +93,17 @@ public class ProcessingEmployees {
                             employee -> System.out.printf("   %s%n", employee));
                 }
         );
+
+        // conta o número de Employees em cada departamento
+        System.out.printf("%nCount of Employees by department:%n");
+        Map<String, Long> employeeCountByDepartment =
+                list.stream()
+                        .collect(Collectors.groupingBy(
+                                Employee::getDepartment, Collectors.counting()));
+
+        employeeCountByDepartment.forEach(
+                (department, count) -> System.out.printf(
+                        "%s has %d employee(s)%n", department, count));
+
     }
 }
