@@ -105,5 +105,23 @@ public class ProcessingEmployees {
                 (department, count) -> System.out.printf(
                         "%s has %d employee(s)%n", department, count));
 
+        // soma os salários dos Employees com o metodo de soma DoubleStream
+        System.out.printf("%nSum of Employees' salaries (via sum method): %.2f%n",
+                list.stream()
+                        .mapToDouble(Employee::getSalary)
+                        .sum());
+
+        // calcula soma dos salários dos Employees com o metodo reduce Stream
+        System.out.printf("Sum of Employees' salaries (via reduce method): %.2f%n",
+                list.stream()
+                        .mapToDouble(Employee::getSalary)
+                        .reduce(0, (value1, value2) -> value1 + value2));
+
+        // calcula a média de salários dos Employees com o metodo average DoubleStream
+        System.out.printf("Average of Employees' salaries: %.2f%n",
+                list.stream()
+                        .mapToDouble(Employee::getSalary)
+                        .average()
+                        .getAsDouble());
     }
 }
