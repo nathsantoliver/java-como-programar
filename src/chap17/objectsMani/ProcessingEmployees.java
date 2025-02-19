@@ -1,7 +1,9 @@
 package chap17.objectsMani;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
+import java.util.function.Predicate;
 
 public class ProcessingEmployees {
     public static void main(String[] args) {
@@ -23,6 +25,24 @@ public class ProcessingEmployees {
         // exibe todos os Employees
         System.out.println("Complete Employee list:");
         list.stream().forEach(System.out::println);
+
+        // Predicate que retorna true para salários no intervalo US$ 4000 - US$ 6000
+        Predicate<Employee> fourToSixThousand = e -> (e.getSalary() >= 4000 && e.getSalary() <= 6000);
+
+        // Exibe Employees com salários no intervalo US$ 4000 - US$ 6000
+        // classificados em ordem crescente por salário
+        System.out.printf("%nEmployees earning $4000-$6000 per month sorted by salary:%n");
+        list.stream()
+                .filter(fourToSixThousand)
+                .sorted(Comparator.comparing(Employee::getSalary))
+                .forEach(System.out::println);
+
+        // Exibe o primeiro Employee com salário no intervalo US$ 4000 - US$ 6000
+        System.out.printf("%nFirst employee who earns $4000-$6000:%n%s%n",
+                list.stream()
+                        .filter(fourToSixThousand)
+                        .findFirst()
+                        .get());
 
     }
 }
