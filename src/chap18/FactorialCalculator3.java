@@ -1,7 +1,7 @@
 package chap18;
 
 public class FactorialCalculator3 {
-    // declaraçoã recursiva de metodo fatorial
+    // declaração recursiva de metodo fatorial
     public static long factorial(long number) {
         long result = 1;
 
