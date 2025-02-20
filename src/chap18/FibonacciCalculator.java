@@ -11,8 +11,8 @@ public class FibonacciCalculator {
         if (number.equals(BigInteger.ZERO) || number.equals(BigInteger.ONE)) {  // casos básicos
             return number;
         } else {    // passo de recursão
-            return fibonacci(number.subtract(BigInteger.ONE))
-                    .add(fibonacci(number.subtract(TWO)));
+            return fibonacci(number.subtract(BigInteger.ONE))   // (num - 1)
+                    .add(fibonacci(number.subtract(TWO)));      // + (num - 2)
         }
     }
 
