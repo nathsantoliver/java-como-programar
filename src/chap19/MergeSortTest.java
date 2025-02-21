@@ -7,7 +7,7 @@ public class MergeSortTest {
 
     // chama o metodo split recursivo para iniciar a classificação por intercalação
     public static void mergeSort(int[] data) {
-        sortArray(data, 0, data.length - 1);    // classifica todo o array
+        sortArray(data, 0, data.length - 1);    // classifica o array inteiro
     }
 
     // divide o array, classifica subarray e intercala subarrays no array classificado
