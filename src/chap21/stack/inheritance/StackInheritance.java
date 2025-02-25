@@ -1,4 +1,4 @@
-package chap21.stack;
+package chap21.stack.inheritance;
 
 import chap21.list.EmptyListException;
 import chap21.list.List;
