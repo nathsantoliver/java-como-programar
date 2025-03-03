@@ -1,4 +1,4 @@
-package chap23.synchronization;
+package chap23.synchronization.unsync;
 
 public class ArrayWriter implements Runnable {
 

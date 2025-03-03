@@ -1,4 +1,4 @@
-package chap23.synchronization;
+package chap23.synchronization.unsync;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
